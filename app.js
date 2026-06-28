@@ -236,7 +236,7 @@
         fg.setAttribute('stroke', 'var(--moss)');
         fg.setAttribute('stroke-width', stroke);
         fg.setAttribute('stroke-dasharray', `${circumference * pct} ${circumference}`);
-        fg.setAttribute('stroke-dashoffset', circumference * 0.25);
+        fg.setAttribute('stroke-dashoffset', circumference * (1 - pct) );
         fg.setAttribute('transform', `rotate(-90 ${cx} ${cy})`);
         fg.setAttribute('stroke-linecap', 'round');
         svg.appendChild(fg);
